@@ -7,17 +7,22 @@
 :root {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
+  --bgc-primary: #f5f4f0;
+  --line-color: #d9d9d9;
+  --text-color-secondary: #333333;
+  --text-color-tertiary: #e1624f;
+  --heading-color: #1b1b1b;
 }
 
 body {
-  background: #f5f4f0;
+  background: var(--bgc-primary);
   font-size: 1.6rem;
   min-height: 100vh;
   padding: 0 2rem;
 }
 
 .line {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--line-color);
 }
 
 #page {
@@ -26,23 +31,11 @@ body {
   padding-top: 8.4rem;
 }
 
+/*MAIN*/
 main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-}
-
-#title-page p {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #e1624f;
-  line-height: 2.17rem;
-}
-
-#title-page h1 {
-  font-size: 3.6rem;
-  font-weight: 700;
-  line-height: 4.9rem;
 }
 
 main figure img {
@@ -53,7 +46,7 @@ main figure img {
 
 main figcaption {
   font-size: 1.6rem;
-  color: #333333;
+  color: var(--text-color-secondary);
   font-style: italic;
   font-weight: 400;
   line-height: 2.17rem;
@@ -61,16 +54,31 @@ main figcaption {
   margin-top: 2.4rem;
 }
 
+#title-page p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color-tertiary);
+  line-height: 2.17rem;
+}
+
+#title-page h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 4.9rem;
+}
+
 main > p:nth-child(5) {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.17rem;
   text-align: center;
-  color: #333333;
+  color: var(--text-color-secondary);
 }
 
+/*SECTION*/
 #list {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid var(--line-color);
 }
 
 #list .card + .card {
@@ -85,14 +93,14 @@ main > p:nth-child(5) {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.17rem;
-  color: #e1624f;
+  color: var(--text-color-tertiary);
   margin-bottom: 2px;
   text-transform: uppercase;
 }
 
 #title-list h2 {
   font-size: 3.2rem;
-  color: #1b1b1b;
+  color: var(--heading-color);
   font-weight: 700;
   line-height: 4.35rem;
   margin-bottom: 8px;
@@ -102,9 +110,10 @@ main > p:nth-child(5) {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.17rem;
-  color: #333333;
+  color: var(--text-color-secondary);
 }
 
+/*CARD*/
 .card img {
   width: 100%;
   border-radius: 2.8rem;
@@ -113,14 +122,14 @@ main > p:nth-child(5) {
 
 .card h3 {
   font-size: 2.8rem;
-  color: #1b1b1b;
+  color: var(--heading-color);
   font-weight: 700;
   line-height: 3.8rem;
 }
 
 .card > p:nth-child(3) {
   font-size: 1.6rem;
-  color: #333333;
+  color: var(--text-color-secondary);
   font-weight: 400;
   line-height: 2.17rem;
 }
@@ -136,6 +145,7 @@ main > p:nth-child(5) {
   margin-left: 3rem;
 }
 
+/*FOOTER*/
 footer p {
   font-size: 1.6rem;
   font-weight: 400;
