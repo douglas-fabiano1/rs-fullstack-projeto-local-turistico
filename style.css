@@ -10,6 +10,138 @@
 }
 
 body {
-  background: #F5F4F0;
+  background: #f5f4f0;
+  font-size: 1.6rem;
   min-height: 100vh;
+  padding: 0 2rem;
+}
+
+.line {
+  border: 1px solid #d9d9d9;
+}
+
+#page {
+  max-width: 112rem;
+  margin: 0 auto 4.8rem;
+  padding-top: 8.4rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#title-page p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #e1624f;
+  line-height: 2.17rem;
+}
+
+#title-page h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.9rem;
+}
+
+main figure img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2.8rem;
+}
+
+main figcaption {
+  font-size: 1.6rem;
+  color: #333333;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.17rem;
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+main > p:nth-child(5) {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.17rem;
+  text-align: center;
+  color: #333333;
+}
+
+#list {
+  border-top: 1px solid #d9d9d9;
+}
+
+#list .card + .card {
+  margin-top: 4.8rem;
+}
+
+#title-list {
+  margin: 6.4rem 0;
+}
+
+#title-list p:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.17rem;
+  color: #e1624f;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+#title-list h2 {
+  font-size: 3.2rem;
+  color: #1b1b1b;
+  font-weight: 700;
+  line-height: 4.35rem;
+  margin-bottom: 8px;
+}
+
+#title-list p:nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.17rem;
+  color: #333333;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  font-size: 2.8rem;
+  color: #1b1b1b;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+.card > p:nth-child(3) {
+  font-size: 1.6rem;
+  color: #333333;
+  font-weight: 400;
+  line-height: 2.17rem;
+}
+
+.card > p:nth-child(4) {
+  margin-top: 3rem;
+}
+
+.card ul li {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.17rem;
+  margin-left: 3rem;
+}
+
+footer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin-top: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
